@@ -18,6 +18,7 @@ const App = () => {
     const [rating, setRating] = useState(0);
     const [filteredPlaces, setFilteredPlaces] = useState([]);
 
+    //Allow or block
     useEffect(() => {
         navigator.geolocation.getCurrentPosition(({ coords: {latitude, longitude} }) => {
             setCoordinates({ lat: latitude, lng: longitude});
